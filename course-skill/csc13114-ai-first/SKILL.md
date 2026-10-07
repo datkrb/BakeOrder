@@ -10,8 +10,8 @@ Treat this as web engineering coursework with encouraged, disclosed AI assistanc
 ## Start from the actual assignment
 
 - Read [references/course-policy.md](references/course-policy.md) for the supplied AI rules and source limitations. Distinguish instructor requirements, student scheduling choices, project assumptions, and recommendations.
-- For PA#1, read [references/pa1-rubric.md](references/pa1-rubric.md). For IA#1, PA#2–PA#5 or other work, obtain/read that assignment's actual brief and rubric before asserting deliverables. Do not extrapolate PA#1's page limit, scoring, or ZIP rules to every assignment.
-- Linked Claude artifacts have not been retrieved successfully. A URL alone is not evidence that its embedded files have been read. Ask for exported files or pasted instructions when those details are needed; continue independent work supported by known requirements.
+- Read [references/course-overview.md](references/course-overview.md) for the project baseline, grading and workflow. For PA#1, read [references/pa1-rubric.md](references/pa1-rubric.md). For IA#1 or feature specifications, read [references/specifications.md](references/specifications.md). Obtain assignment-specific Classroom rubrics when missing; do not extrapolate PA#1's rules to every assignment.
+- The user supplied Markdown exports of AWAD01 (17 Sep 2026) and AWAD02 (24 Sep 2026); both have been read. Direct Claude URLs were inaccessible. Cite the exports rather than claiming successful browsing. AWAD02 and the PA#1 assignment explicitly supersede AWAD01's earlier statement that checkpoint 1 needs a spec: PA#1 has no specification. Full syllabus sections 5/7/9, detailed checkpoint dates and later rubrics remain unavailable.
 - Six project checkpoints and five project milestones PA#1–PA#5 are distinct counts. Never invent a mapping. Dates provided by the student can be used as planned dates; do not label them instructor-confirmed deadlines.
 
 ## Work with AI transparently
@@ -24,7 +24,10 @@ Treat this as web engineering coursework with encouraged, disclosed AI assistanc
 
 ## Develop and review at the right stage
 
-- PA#1 is proposal/planning, not implementation or specification. Later, follow the provided spec template and evaluation instructions. Specific acceptance criteria, error behavior and tests are useful when the actual task calls for them; do not invent mandatory headings from inaccessible sources.
+- PA#1 is proposal/planning, not implementation or specification. Its semester scope must still include the course baseline: a database, authentication and a deployable web application with a relied-upon LLM feature. The repository needs rules and running CI early; a workflow file alone is not a verified successful run.
+- Follow Plan → Implement → Validate → Human Gate. Use meaningful tests, lint, types and review as code exists. Human gates belong at consequential/irreversible actions, not every reversible edit. A read-only document CI at PA#1 is an initial check, not the later full harness or proof that a merge was blocked.
+- IA#1 is an individual one-page spec for splitting a table bill in the existing smart-restaurant application, not the BakeOrder core feature. Preserve the silent handoff, actual implementer's question list and revision requirements in the specification reference. Do not invent a question list and present it as peer feedback.
+- When writing a feature spec, use the eight supplied sections and cover empty states, partial failures, permissions, concurrency/duplicates and limits. Acceptance criteria must be executable and map to test names. Do not write a spec retroactively and claim it preceded code.
 - In plans, identify a named accountable owner and date for each checkpoint. Multiple people can contribute. For team work, assign concrete contributions instead of hiding ownership under “the team”; do not imply a contributor has completed planned work.
 - Evaluate the core LLM behavior through wrong answers, harmed users, magnitude/reversibility of harm and observable errors. Human confirmation reduces risk but does not make mistakes cost-free. Label targets and hypothetical costs as such.
 - Explain changed behavior, verification actually performed, and limitations. Keep implementation understandable to the student. On request, rehearse oral questions about their code, data flow, model mistakes and tradeoffs; do not claim they understand until demonstrated.

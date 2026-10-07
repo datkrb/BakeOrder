@@ -25,3 +25,11 @@ Kept: kết quả kiểm tra truy cập: tải được HTML khung; yêu cầu d
 Changed: làm rõ rằng chưa lấy được nội dung bài học bên trong, không phải hai URL là file tải xuống.
 Rejected: suy đoán nội dung spec từ HTML khung hoặc kết luận tài liệu đã bị xóa chỉ vì trình duyệt không đăng nhập không đọc được.
 By hand: người dùng giải thích đây là hai website và yêu cầu đọc trực tiếp; việc kiểm tra được AI thực hiện. Chưa có nội dung nguồn mới để bổ sung vào skill.
+
+## 2026-10-07 — Đọc hai bản xuất slide và sửa theo yêu cầu học kỳ
+Tool: Codex, trình đọc file, Python, Git/GitHub Actions.
+Asked for: đọc hai file Markdown vừa tải và hoàn thiện skill dùng xuyên môn cùng các tài liệu liên quan.
+Kept: yêu cầu database, authentication, deployability; quy trình Plan–Implement–Validate–Human Gate; template spec tám phần và hướng dẫn IA#1 từ AWAD02.
+Changed: bổ sung đăng nhập, database triển khai được, Docker/cloud, spec trước code và kế hoạch harness/eval/red-team/vấn đáp vào PA#1; thêm CI kiểm tra tài liệu ở giai đoạn hiện tại; cập nhật skill từ hai nguồn đã đọc.
+Rejected: phạm vi chỉ demo cục bộ không có đăng nhập; câu cũ ở AWAD01 yêu cầu spec ở checkpoint 1 vì AWAD02 và rubric PA#1 mới hơn ghi rõ không cần spec; không đánh đồng IA#1 với tính năng BakeOrder.
+By hand: người dùng tải và cung cấp hai bản xuất slide. AI đọc, đối chiếu và chỉnh các file; chưa có bằng chứng nhóm đã tự phỏng vấn, viết code sản phẩm hoặc chạy thử với người dùng. Hai file nguồn được giữ nguyên tại máy, không đưa vào gói nộp.

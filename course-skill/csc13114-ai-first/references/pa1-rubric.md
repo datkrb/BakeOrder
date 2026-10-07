@@ -1,6 +1,6 @@
 # PA#1 — supplied requirements
 
-Source: rubric and assignment text pasted by the user, not a retrieved Claude artifact.
+Sources: rubric and assignment text pasted by the user, corroborated by the supplied AWAD02 Markdown export (24/09/2026), PA#1 slide. AWAD01's older “proposal and spec” wording is superseded by AWAD02 and the specific assignment.
 
 CSC13114; project proposal and plan; teams of up to three named members; 4% of course, 100 points. Maximum two pages of proposal plus repository link. No specification at this milestone; IA#1 and a later core-feature milestone cover specification. PDF is not explicitly required. The page limit still applies to Markdown when rendered; if no rendering convention is provided, disclose uncertainty rather than asserting a verified count.
 
@@ -14,6 +14,8 @@ CSC13114; project proposal and plan; teams of up to three named members; 4% of c
 | Technology | 10 | One project-specific justification per choice, including model provider and cost. |
 
 Small, sharp scope is preferred to ambition. No requirement here limits each checkpoint to one worker: accountable ownership can coexist with multiple named contributors. No supplied text equates CP1–CP6 with PA#1–PA#5.
+
+AWAD01's semester baseline still applies to the plan: database, authentication, deployability and a relied-upon LLM feature. Both decks call for a rules file and running CI early. These do not make product implementation or a feature spec a PA#1 deliverable.
 
 ## Submission
 
