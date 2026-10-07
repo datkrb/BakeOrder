@@ -13,7 +13,6 @@
 - [Đề xuất và kế hoạch](PROPOSAL.md)
 - [Báo cáo tự đánh giá — đề nghị 96/100](SELF_ASSESSMENT_REPORT.md)
 - [Nhật ký sử dụng AI](AI-LOG.md)
-- [Skill dùng xuyên môn CSC13114 AI-first](https://github.com/datkrb/BakeOrder/blob/main/course-skill/csc13114-ai-first/SKILL.md)
 
 Repository: https://github.com/datkrb/BakeOrder
 
@@ -39,8 +38,6 @@ Chi tiết việc của cả ba thành viên, đầu ra và phụ thuộc ở m�
 Gói `23120225-23120226-23120229_96.zip` gồm bốn tài liệu Markdown: `PROPOSAL.md`, `SELF_ASSESSMENT_REPORT.md`, `AI-LOG.md` và `README.md`. Đề không chỉ định PDF; giới hạn hai trang nội dung đề xuất vẫn áp dụng và phụ thuộc cách trình bày khi chấm. Ngày của sáu checkpoint được giữ vì đề yêu cầu người phụ trách và ngày cụ thể cho từng mốc. Điểm tự đánh giá không thay thế điểm chấm chính thức.
 
 Đã kiểm tra bản đề xuất hiện tại thành 2 trang A4 với lề 12 mm, Arial 9,5 pt, giãn dòng 1,22, bảng 8,4 pt và ngắt trang trước mục 4. Đây là bố cục kiểm tra tham chiếu, không phải quy định định dạng của giảng viên; PDF kiểm tra không nằm trong gói Markdown.
-
-Skill là tài nguyên làm việc trong repository, không phải sản phẩm phải nộp của PA#1. Đã đọc hai bản Markdown xuất từ AWAD01 (17/09/2026) và AWAD02 (24/09/2026). AWAD02/current rubric quy định PA#1 không có spec; IA#1 là bài cá nhân chia hóa đơn trong smart-restaurant. Chưa có toàn bộ syllabus, lịch milestone hoặc rubric các bài sau.
 
 ## Kiểm tra tài liệu
 

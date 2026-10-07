@@ -1,43 +1,27 @@
-# AI-LOG — BakeOrder / CSC13114
+# AI-LOG — BakeOrder / PA#1
 
-## 2026-10-07 — Đề xuất và kế hoạch PA#1
-Tool: Codex (trợ lý AI trong phiên làm việc này).
-Asked for: chọn một ý tưởng phù hợp rubric, soạn đề xuất, kế hoạch, tự đánh giá và chuẩn bị repository/gói nộp.
-Kept: ý tưởng BakeOrder, phần lớn nội dung đề xuất, ví dụ lỗi LLM, công nghệ và dự toán token do AI soạn; chưa có mã sản phẩm hay kết quả thử nghiệm.
-Changed: người dùng cung cấp tên/MSSV và repository, yêu cầu chỉ dùng Markdown, sửa lịch từ sáu tuần liên tiếp sang tuần 4–12 bắt đầu 07/10; AI thực hiện các chỉnh sửa vào file.
-Rejected: bỏ bản PDF/HTML khỏi gói nộp theo yêu cầu người dùng; bỏ lịch thứ Năm ban đầu vì người dùng sửa mốc nộp; người dùng phản biện bảng chỉ nêu một chủ trì vì chưa thấy công việc của hai người còn lại.
-By hand: người dùng trực tiếp cung cấp thông tin nhóm, lịch, yêu cầu môn học và các phản biện trong hội thoại; chưa có bằng chứng nhóm tự viết nội dung file hay code. Không gán các chỉnh sửa do AI thực hiện thành phần viết tay.
+## 2026-10-07 — Soạn đề xuất và kế hoạch
+Tool: Codex.
+Asked for: chọn ý tưởng theo rubric, soạn đề xuất, phân công, tự đánh giá và chuẩn bị repository/gói nộp.
+Kept: ý tưởng BakeOrder và phần lớn bản thảo do AI soạn; ví dụ sai đơn, tính năng LLM, công nghệ và dự toán token.
+Changed: người dùng cung cấp tên/MSSV, repo và lịch tuần 4–12 bắt đầu 07/10; yêu cầu chỉ dùng Markdown và phân công cả ba người ở mỗi mốc; AI sửa các file theo phản hồi.
+Rejected: PDF/HTML trong gói nộp; lịch thứ Năm ban đầu; bảng chỉ nêu chủ trì nhưng không rõ việc của các thành viên khác.
+By hand: người dùng cung cấp thông tin nhóm và phản biện các lựa chọn. Chưa có nội dung file hoặc code sản phẩm được xác nhận là nhóm tự viết tay; chỉnh sửa file do AI thực hiện.
 
-Ghi chú: mục trên được bổ sung khi nhận quy định AI-LOG, dựa trên hội thoại đang có; không phải nhật ký đã ghi liên tục từ đầu. Các mục sau được ghi khi làm việc. Không tự ước lượng tỷ lệ sử dụng AI khi chưa đo.
+Ghi chú: mục trên được bổ sung từ hội thoại khi nhận quy định AI-LOG, không phải nhật ký ghi liên tục từ đầu. Các giả định, mục tiêu và việc dự kiến chưa được trình bày như kết quả đã đạt.
 
-## 2026-10-07 — Rà soát chính sách AI-first và tạo skill cho môn học
-Tool: Codex; công cụ đọc file, truy cập web và Git.
-Asked for: đọc tài liệu môn học, xây skill dùng xuyên môn, bổ sung khai báo AI và làm rõ phân công nhóm.
-Kept: skill CSC13114 bám rubric và chính sách người dùng dán; yêu cầu khai báo dữ liệu gửi đến nhà cung cấp LLM; công việc riêng cho ba thành viên tại mỗi checkpoint.
-Changed: áp dụng chính sách AI-first xuyên các bài, phân biệt sáu checkpoint với PA#1–PA#5; ghi rõ hai liên kết Claude chưa đọc được, không suy diễn nội dung đặc tả. AI sửa lại tự đánh giá từ 100 xuống 96 vì nguồn lịch và giả định chưa xác thực; không phải vì dùng nhiều AI.
-Rejected: cách xem việc dùng nhiều AI là vi phạm; tuyên bố đã đọc toàn bộ tài liệu khi công cụ không truy cập được nguồn.
-By hand: người dùng cung cấp đoạn chính sách AI và giải thích bối cảnh môn học; skill và thay đổi tài liệu được AI viết, chưa có kiểm chứng khả năng giải thích của từng thành viên.
-
-## 2026-10-07 — Thử đọc trực tiếp hai trang tài liệu Claude
-Tool: Codex, HTTP client và Chrome headless với hồ sơ trình duyệt riêng, không đăng nhập.
-Asked for: mở hai trang Claude để đọc nội dung môn học thay vì coi chúng là file đính kèm.
-Kept: kết quả kiểm tra truy cập: tải được HTML khung; yêu cầu dữ liệu trực tiếp gặp Cloudflare; sau khi chạy JavaScript, cả hai trang hiển thị “Page not found”.
-Changed: làm rõ rằng chưa lấy được nội dung bài học bên trong, không phải hai URL là file tải xuống.
-Rejected: suy đoán nội dung spec từ HTML khung hoặc kết luận tài liệu đã bị xóa chỉ vì trình duyệt không đăng nhập không đọc được.
-By hand: người dùng giải thích đây là hai website và yêu cầu đọc trực tiếp; việc kiểm tra được AI thực hiện. Chưa có nội dung nguồn mới để bổ sung vào skill.
-
-## 2026-10-07 — Đọc hai bản xuất slide và sửa theo yêu cầu học kỳ
-Tool: Codex, trình đọc file, Python, Git/GitHub Actions.
-Asked for: đọc hai file Markdown vừa tải và hoàn thiện skill dùng xuyên môn cùng các tài liệu liên quan.
-Kept: yêu cầu database, authentication, deployability; quy trình Plan–Implement–Validate–Human Gate; template spec tám phần và hướng dẫn IA#1 từ AWAD02.
-Changed: bổ sung đăng nhập, database triển khai được, Docker/cloud, spec trước code và kế hoạch harness/eval/red-team/vấn đáp vào PA#1; thêm CI kiểm tra tài liệu ở giai đoạn hiện tại; cập nhật skill từ hai nguồn đã đọc.
-Rejected: phạm vi chỉ demo cục bộ không có đăng nhập; câu cũ ở AWAD01 yêu cầu spec ở checkpoint 1 vì AWAD02 và rubric PA#1 mới hơn ghi rõ không cần spec; không đánh đồng IA#1 với tính năng BakeOrder.
-By hand: người dùng tải và cung cấp hai bản xuất slide. AI đọc, đối chiếu và chỉnh các file; chưa có bằng chứng nhóm đã tự phỏng vấn, viết code sản phẩm hoặc chạy thử với người dùng. Hai file nguồn được giữ nguyên tại máy, không đưa vào gói nộp.
-
-## 2026-10-07 — Kiểm chứng CI và bố cục PA#1 sau khi đọc slide
+## 2026-10-07 — Đối chiếu yêu cầu và kiểm tra bản nộp
 Tool: Codex, Python, Chrome headless, GitHub Actions.
-Asked for: kiểm chứng các thay đổi tài liệu và CI theo yêu cầu môn học vừa đọc.
-Kept: trình xác thực skill thành công; CI commit 38bfcd5 thành công; kiểm tra tổng điểm/tên ZIP, AI-log và link file.
-Changed: ghi rõ phạm vi CI tài liệu và bố cục in tham chiếu sau khi kiểm tra đề xuất thành 2 trang A4; gói nộp vẫn chỉ Markdown.
-Rejected: ba bản sao tạm bị cố ý làm thiếu AI-LOG, sai tổng điểm và hỏng link đều bị trình kiểm tra từ chối; không trình bày chúng như lỗi sản phẩm thực tế hoặc một merge đã bị chặn.
-By hand: chưa có thao tác kiểm thử thủ công của nhóm được ghi nhận; AI thực hiện các kiểm tra trên và báo lại kết quả, không chứng nhận khả năng vấn đáp của nhóm.
+Asked for: đối chiếu PA#1 với rubric và hai bản xuất slide người dùng cung cấp, rồi kiểm tra tài liệu.
+Kept: PA#1 không có spec; kế hoạch học kỳ cần database, đăng nhập, triển khai và một tính năng LLM có eval/giới hạn/xác nhận; repository có rules file và CI.
+Changed: bổ sung yêu cầu còn thiếu vào phạm vi/kế hoạch, mô tả dữ liệu gửi tới Gemini; giảm tự đánh giá 100 xuống 96 vì còn giả định và lịch chưa xác thực; kiểm tra bố cục đề xuất hai trang A4 tham chiếu.
+Rejected: phạm vi chỉ demo cục bộ không có đăng nhập; yêu cầu spec ở PA#1 từ slide cũ vì hướng dẫn mới hơn phủ định; tuyên bố CI tài liệu là quality gate hoàn chỉnh của sản phẩm.
+By hand: người dùng tải và cung cấp slide. AI thực hiện chỉnh sửa, kiểm tra cục bộ và xác minh CI thành công; nhóm chưa phỏng vấn, triển khai sản phẩm hoặc đánh giá mô hình. Ba lỗi kiểm tra trong bản sao tạm không phải bằng chứng chặn merge thực tế.
+
+## 2026-10-07 — Thu gọn repository đúng phạm vi PA#1
+Tool: Codex và Git.
+Asked for: gỡ các nội dung không phục vụ yêu cầu PA#1 khỏi repository dự án.
+Kept: đề xuất, tự đánh giá, nhật ký AI, README và rules/CI ban đầu theo slide.
+Changed: gỡ tài nguyên dùng chung cho môn và các liên kết tới chúng; thu gọn nhật ký thành tài khoản công việc liên quan PA#1, bảo toàn bản chi tiết ở máy cục bộ và lịch sử Git.
+Rejected: đưa mọi tài nguyên hỗ trợ AI vào repository chỉ vì trước đó người dùng đã cho phép push tài liệu dự án.
+By hand: người dùng phát hiện việc mở rộng phạm vi và yêu cầu gỡ; AI thực hiện việc dọn repository và đóng lại ZIP.
