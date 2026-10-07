@@ -25,3 +25,11 @@ Kept: đề xuất, tự đánh giá, nhật ký AI, README và rules/CI ban đ�
 Changed: gỡ tài nguyên dùng chung cho môn và các liên kết tới chúng; thu gọn nhật ký thành tài khoản công việc liên quan PA#1, bảo toàn bản chi tiết ở máy cục bộ và lịch sử Git.
 Rejected: đưa mọi tài nguyên hỗ trợ AI vào repository chỉ vì trước đó người dùng đã cho phép push tài liệu dự án.
 By hand: người dùng phát hiện việc mở rộng phạm vi và yêu cầu gỡ; AI thực hiện việc dọn repository và đóng lại ZIP.
+
+## 2026-10-07 — Chỉ giữ tài liệu nộp PA#1
+Tool: Codex và Git.
+Asked for: chỉ giữ yêu cầu nộp PA#1, không áp dụng thêm phần chuẩn bị repository từ các slide tuần đầu.
+Kept: PROPOSAL.md, SELF_ASSESSMENT_REPORT.md, AI-LOG.md và README.md.
+Changed: gỡ rules file, workflow CI, script kiểm tra và file cấu hình khỏi nhánh hiện tại; chuyển CI trong kế hoạch sang CP2, bỏ các tham chiếu tới công cụ đã gỡ.
+Rejected: giữ rules/CI chỉ vì slide môn học nói tới chúng dù người dùng đã giới hạn phạm vi repository ở PA#1.
+By hand: người dùng xác định lại phạm vi; AI thực hiện thay đổi. Các mục trước ghi lịch sử công việc lúc đó, không mô tả danh sách file hiện còn trong repo.

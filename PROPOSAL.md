@@ -28,7 +28,7 @@ Lịch dự kiến từ tuần 4 đến tuần 12, cách nhau 1–2 tuần. Cư�
 
 | Mốc / ngày dự kiến | Cường | Đại | Đạt | Đầu ra / chủ trì |
 |---|---|---|---|---|
-| CP1 · T4 · 07/10/2026 | Rà vấn đề, phạm vi | Rà LLM, chi phí | Rules file, CI tài liệu, repo | PA#1 + tự đánh giá + AI-LOG / Cường |
+| CP1 · T4 · 07/10/2026 | Rà vấn đề, phạm vi | Rà LLM, chi phí | Rà repo, tài liệu và gói nộp | PA#1 + tự đánh giá + AI-LOG / Cường |
 | CP2 · T5 · 14/10/2026 | Phỏng vấn, 20 mẫu; spec lõi trước code | Contract/quyền; thử mô hình riêng | Rà spec, giao diện; CI kiểm tra AC | Spec lõi, 20 mẫu, harness ban đầu / Cường |
 | CP3 · T7 · 28/10/2026 | 40 mẫu phát triển, phân loại lỗi | Trích xuất, đăng nhập/API, đo token | Giao diện nháp/căn cứ, kiểm tra quyền | Prototype LLM có giới hạn / Đại |
 | CP4 · T9 · 11/11/2026 | Kiểm tra lỗi nghiệp vụ, vị trí xác nhận | Database, lưu đơn; REST/GraphQL | Tích hợp trọn luồng, Docker/cloud demo | Bản tích hợp có đăng nhập / Đạt |
@@ -48,7 +48,7 @@ Phụ thuộc chính: dữ liệu mẫu trước thử LLM; luồng xác nhận 
 - **Auth.js:** tích hợp đăng nhập/session với Next.js; kiểm tra quyền ở server để chặn truy cập đơn trái phép, không chỉ ẩn nút ở giao diện.
 - **Google Gemini Developer API, `gemini-2.5-flash-lite`:** chi phí thấp phù hợp thử lặp trên hội thoại ngắn để trích xuất phiếu đơn; kiểm tra chất lượng tiếng Việt ở CP3. Giá Standard trả phí: 0,10 USD/triệu token đầu vào, 0,40 USD/triệu token đầu ra [1].
 - **Zod:** kiểm tra cấu trúc và kiểu dữ liệu mô hình trả về trước khi hiển thị/lưu; không coi cấu trúc hợp lệ là bằng chứng nội dung đúng.
-- **GitHub Actions:** CI chạy từ giai đoạn tài liệu, mở rộng lint/types/test theo AC khi có code; lưu bằng chứng lần gate phát hiện lỗi thật.
+- **GitHub Actions (dự kiến CP2):** kiểm tra lint/types/test theo AC khi có code; lưu bằng chứng lần gate phát hiện lỗi thật.
 - **Docker:** đóng gói web và database để chạy lại được trên máy nhóm/cloud; log lỗi, token và latency phục vụ quan sát demo.
 
 **Dự toán:** 2.000 token vào + 500 token ra/lượt ≈ 0,0004 USD; 5.000 lượt ≈ 2 USD. Ngân sách mô hình 5 USD gồm thử lại; ứng dụng giới hạn token/lượt, số lượt và dừng ở ngân sách. Hosting/database cloud chưa chốt nhà cung cấp; dự trù tối đa 10 USD/tháng (ngân sách, không phải báo giá), ưu tiên tài nguyên môn học; chốt ở CP2 trước triển khai CP4. Chưa gồm thuế/tỷ giá.
