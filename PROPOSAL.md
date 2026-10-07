@@ -2,7 +2,7 @@
 CSC13114 · Nhóm tối đa 3 thành viên · Nhóm 23120225–23120226–23120229
 
 **Thành viên:** Trần Gia Cường — 23120225; Nguyễn Ngọc Đại — 23120226; Nguyễn Hà Đạt — 23120229.
-**Repository:** https://github.com/datkrb/BakeOrder.
+**Repository:** https://github.com/datkrb/BakeOrder
 
 ## 1. Vấn đề và người dùng
 BakeOrder là ứng dụng web hỗ trợ cửa hàng bánh nhỏ chuyển hội thoại đặt bánh tiếng Việt thành phiếu đơn để kiểm tra. Người dùng đại diện là **chị Mai, chủ một tiệm bánh sinh nhật nhận đặt trước**, vừa tư vấn khách vừa tổng hợp đơn cuối ngày. Đây là persona giả định cần xác thực, không phải người đã được phỏng vấn. Hiện tại, chị đọc lại tin nhắn rồi chép yêu cầu vào sổ hoặc bảng tính.
@@ -16,14 +16,12 @@ Ví dụ: khách nhắn “bánh 16 cm, lấy 18h ngày 20/11”, sau đó “đ
 
 **Ai chịu thiệt và bao nhiêu:** lấy tình huống giả định một đơn bán 350.000 đồng, chi phí làm bánh 180.000 đồng. Nếu phát hiện sai kích thước sau khi làm, cửa hàng có thể mất thêm 180.000 đồng để làm lại; nếu hủy đơn, có thể phải hoàn 350.000 đồng đã thu và chịu chi phí bánh đã làm. Đây là hai kịch bản, không cộng gộp thành một khoản thiệt hại. Khách mất thời gian, và giao sau giờ tiệc có thể không khắc phục được bằng việc đổi bánh. Các con số sẽ được xác thực khi phỏng vấn. Trước sản xuất, lỗi thường có thể sửa trên phiếu; sau giao hàng, việc sửa dữ liệu không hoàn tác được thiệt hại.
 
-**Làm sao biết sai:** dự kiến đánh giá bằng 60 hội thoại có đáp án được người đọc kiểm tra, gồm đổi yêu cầu, thiếu thông tin, mâu thuẫn và cách viết tắt. Dùng 40 hội thoại phát triển, giữ riêng 20 hội thoại đánh giá cuối. Theo dõi độ đúng từng trường, số đơn sai trường quan trọng và số trường người dùng phải sửa. Mục tiêu ban đầu: đúng ít nhất 95% trường quan trọng đã có thông tin và không tự điền các trường cố ý thiếu trong bộ đánh giá; đây là mục tiêu, chưa phải kết quả đạt được.
+**Làm sao biết sai:** dự kiến đánh giá bằng 60 hội thoại có đáp án do Cường gán nhãn và Đạt kiểm tra, bất đồng được đối chiếu lại với hội thoại, gồm đổi yêu cầu, thiếu thông tin, mâu thuẫn và cách viết tắt. Dùng 40 hội thoại phát triển, giữ riêng 20 hội thoại đánh giá cuối. Trường quan trọng gồm loại bánh, kích thước, số lượng và lịch nhận; sai một trường là một đơn có nguy cơ gây thiệt hại. Theo dõi độ đúng từng trường, số đơn sai và số trường người dùng sửa; so sánh thời gian chép tay với kiểm tra phiếu trên cùng tình huống. Mục tiêu ban đầu: đúng ít nhất 95% trường quan trọng đã có thông tin và không tự điền các trường cố ý thiếu trong bộ đánh giá; đây là mục tiêu, chưa phải kết quả đạt được.
 
 ## 3. Phạm vi học kỳ
 **Làm:** dán hội thoại văn bản tiếng Việt, một đơn mỗi lần; tạo phiếu nháp và chỉ ra căn cứ; cảnh báo thiếu/mâu thuẫn; sửa, xác nhận, lưu và xem danh sách đơn; đánh giá chất lượng trích xuất và ghi nhận thời gian xử lý, token, chi phí. Bản thử nghiệm chạy cho một cửa hàng với người vận hành tin cậy trên máy demo.
 
 **Không làm:** kết nối Zalo/Facebook, ảnh hoặc giọng nói, tự trò chuyện với khách, tự xác nhận đơn, thanh toán, vận chuyển, quản lý kho, nhiều chi nhánh, triển khai công khai nhiều tài khoản. Yêu cầu dị ứng chỉ được giữ nguyên để người bán kiểm tra, không được AI kết luận về độ an toàn thực phẩm.
-
-<!-- PAGEBREAK -->
 
 ## 4. Kế hoạch qua sáu checkpoint
 Lịch checkpoint: thứ Năm hằng tuần từ 15/10/2026 đến 19/11/2026. Trần Gia Cường phụ trách nhu cầu và đánh giá; Nguyễn Ngọc Đại phụ trách LLM/backend; Nguyễn Hà Đạt phụ trách giao diện và tích hợp. Mỗi mốc có một người chịu trách nhiệm cuối cùng, các thành viên còn lại hỗ trợ và rà soát.
@@ -31,10 +29,10 @@ Lịch checkpoint: thứ Năm hằng tuần từ 15/10/2026 đến 19/11/2026. T
 | Mốc | Công việc và kết quả dự kiến | Chủ trì | Hạn hoàn thành |
 |---|---|---|---|
 | CP1 | Chốt vấn đề, phạm vi, đề xuất PA#1, repo và tự đánh giá. | Trần Gia Cường | 15/10/2026 |
-| CP2 | Phỏng vấn một chủ tiệm; chuẩn bị 20 hội thoại đầu; lập đặc tả khi đến mốc yêu cầu. | Trần Gia Cường | 22/10/2026 |
+| CP2 | Phỏng vấn một chủ tiệm; xác thực quy trình và chi phí sai đơn; chuẩn bị 20 hội thoại đầu có đáp án. | Trần Gia Cường | 22/10/2026 |
 | CP3 | Thử trích xuất có căn cứ, đánh dấu thiếu/mâu thuẫn; báo cáo lỗi và chi phí trên 40 mẫu phát triển. | Nguyễn Ngọc Đại | 29/10/2026 |
 | CP4 | Tích hợp luồng dán → nháp → sửa → xác nhận → lưu; demo và kiểm tra dữ liệu lưu. | Nguyễn Hà Đạt | 05/11/2026 |
-| CP5 | Hoàn thiện 60 mẫu; đánh giá 20 mẫu giữ riêng; thử với người dùng, sửa lỗi nghiêm trọng. | Trần Gia Cường | 12/11/2026 |
+| CP5 | Hoàn thiện 60 mẫu; đánh giá 20 mẫu giữ riêng; thử với chủ tiệm, đo thời gian và số lần sửa so với chép tay. | Trần Gia Cường | 12/11/2026 |
 | CP6 | Chốt bản demo, hướng dẫn chạy, kết quả đánh giá, giới hạn và thay đổi so với kế hoạch. | Nguyễn Hà Đạt | 19/11/2026 |
 
 Phụ thuộc chính: dữ liệu mẫu trước thử LLM; luồng xác nhận trước thử người dùng. Dự kiến hoàn thành công việc chính trước mỗi hạn chính thức ba ngày để sửa lỗi. Nếu độ chính xác chưa đạt ở CP3, giảm xuống đơn một loại bánh và ưu tiên kích thước, số lượng, lịch nhận; vẫn giữ xác nhận thủ công. Nếu yêu cầu chi tiết từng checkpoint thay đổi, nhóm cập nhật công việc trên repository và ghi lại lý do.
@@ -47,7 +45,7 @@ Phụ thuộc chính: dữ liệu mẫu trước thử LLM; luồng xác nhận 
 ## 6. Công nghệ và chi phí
 - **Next.js + TypeScript:** giao diện và API trong cùng dự án để tích hợp nhanh luồng phiếu nháp; chỉ gọi mô hình ở server để giữ kín API key.
 - **SQLite:** lưu đơn đã xác nhận và các lần chỉnh sửa trong bản demo một cửa hàng, không cần vận hành máy chủ cơ sở dữ liệu riêng.
-- **Google Gemini Developer API, `gemini-2.5-flash-lite`:** lựa chọn ban đầu cho trích xuất văn bản; đánh giá trên bộ mẫu trước khi chốt chất lượng. Giá Standard trả phí: 0,10 USD/triệu token đầu vào, 0,40 USD/triệu token đầu ra [1].
+- **Google Gemini Developer API, `gemini-2.5-flash-lite`:** chi phí thấp phù hợp thử lặp trên hội thoại ngắn để trích xuất phiếu đơn; kiểm tra chất lượng tiếng Việt ở CP3. Giá Standard trả phí: 0,10 USD/triệu token đầu vào, 0,40 USD/triệu token đầu ra [1].
 - **Zod:** kiểm tra cấu trúc và kiểu dữ liệu mô hình trả về trước khi hiển thị/lưu; không coi cấu trúc hợp lệ là bằng chứng nội dung đúng.
 - **Git + GitHub:** quản lý mã, tài liệu và phân công qua issue, giúp truy vết thay đổi kế hoạch; demo chạy cục bộ để chưa cần chi phí hosting.
 

@@ -10,9 +10,8 @@
 | Nguyễn Hà Đạt | 23120229 | Giao diện và tích hợp |
 
 ## Tài liệu PA#1
-- [Đề xuất và kế hoạch — PDF 2 trang](PROPOSAL.pdf)
-- [Bản nguồn Markdown](PROPOSAL.md)
-- [Báo cáo tự đánh giá — 92/100](SELF_ASSESSMENT_REPORT.md)
+- [Đề xuất và kế hoạch](PROPOSAL.md)
+- [Báo cáo tự đánh giá — đề nghị 100/100](SELF_ASSESSMENT_REPORT.md)
 
 Repository: https://github.com/datkrb/BakeOrder
 
@@ -33,5 +32,6 @@ Phạm vi dự kiến: dán hội thoại, trích xuất một đơn, hiển th�
 
 Chi tiết đầu ra và phụ thuộc ở mục 4 của đề xuất. Lịch dựa trên thông tin nhóm; cập nhật nếu môn học điều chỉnh.
 
-## Xuất tài liệu
-Chạy `node build.cjs`, mở `PROPOSAL.html` và in PDF khổ A4, tỉ lệ 100%, tắt header/footer trình duyệt. Kiểm tra tối đa 2 trang. Không cần cài thư viện Node bổ sung.
+## Nộp bài
+
+Gói `23120225-23120226-23120229_100.zip` gồm ba tài liệu Markdown: `PROPOSAL.md`, `SELF_ASSESSMENT_REPORT.md` và `README.md`. Đề không chỉ định PDF; giới hạn hai trang nội dung đề xuất vẫn áp dụng. Ngày của sáu checkpoint được giữ vì đề yêu cầu người phụ trách và ngày cụ thể cho từng mốc. Điểm tự đánh giá không thay thế điểm chấm chính thức.
