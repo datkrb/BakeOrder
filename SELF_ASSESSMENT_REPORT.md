@@ -21,8 +21,10 @@ Nhóm tự đánh giá bản đề xuất và kế hoạch PA#1 theo bằng ch�
 - Chưa phỏng vấn chủ cửa hàng, thu dữ liệu thực tế hoặc xác thực giả định thiệt hại.
 - Chưa triển khai sản phẩm hay đánh giá mô hình; các chỉ số là mục tiêu. Đặc tả không thuộc phạm vi PA#1 nên chưa viết.
 - Chưa có mẫu báo cáo trên Classroom; bảng này bám sáu tiêu chí được cung cấp và cần đối chiếu nếu mẫu có trường bổ sung.
-- Đã đọc bản Markdown xuất từ AWAD01 và AWAD02 do người dùng cung cấp; chưa có syllabus cập nhật, lịch milestone và rubric các bài sau trên Classroom. Bản Markdown mới chưa xác minh phân trang theo định dạng chấm của môn học.
+- Đã đọc bản Markdown xuất từ AWAD01 và AWAD02; chưa có syllabus cập nhật, lịch milestone và rubric các bài sau trên Classroom. Đã kiểm tra đề xuất là 2 trang A4 theo bố cục tham chiếu ghi trong README; chưa có quy định trình bày cụ thể của giảng viên.
 - CI hiện kiểm tra tính nhất quán tài liệu; chưa có code để chạy lint/types/test sản phẩm và chưa có bằng chứng chặn merge. Đây là phần sẽ mở rộng ở giai đoạn harness.
+
+Kiểm chứng bổ sung: [CI thành công tại commit 38bfcd5](https://github.com/datkrb/BakeOrder/actions/runs/37635013819); trình kiểm tra cũng đã phát hiện ba lỗi được đưa vào bản sao tạm (thiếu AI-LOG, sai tổng điểm, link file hỏng). Đây không phải bằng chứng một merge đã bị chặn.
 
 ## Tên gói nộp
 `23120225-23120226-23120229_96.zip` — MSSV tăng dần, tổng điểm trong tên trùng bảng tự đánh giá. Điểm này phản ánh phần chưa xác thực, không phải khấu trừ vì dùng AI hoặc chưa triển khai ở giai đoạn đề xuất.

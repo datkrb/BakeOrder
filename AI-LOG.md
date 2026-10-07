@@ -33,3 +33,11 @@ Kept: yêu cầu database, authentication, deployability; quy trình Plan–Impl
 Changed: bổ sung đăng nhập, database triển khai được, Docker/cloud, spec trước code và kế hoạch harness/eval/red-team/vấn đáp vào PA#1; thêm CI kiểm tra tài liệu ở giai đoạn hiện tại; cập nhật skill từ hai nguồn đã đọc.
 Rejected: phạm vi chỉ demo cục bộ không có đăng nhập; câu cũ ở AWAD01 yêu cầu spec ở checkpoint 1 vì AWAD02 và rubric PA#1 mới hơn ghi rõ không cần spec; không đánh đồng IA#1 với tính năng BakeOrder.
 By hand: người dùng tải và cung cấp hai bản xuất slide. AI đọc, đối chiếu và chỉnh các file; chưa có bằng chứng nhóm đã tự phỏng vấn, viết code sản phẩm hoặc chạy thử với người dùng. Hai file nguồn được giữ nguyên tại máy, không đưa vào gói nộp.
+
+## 2026-10-07 — Kiểm chứng CI và bố cục PA#1 sau khi đọc slide
+Tool: Codex, Python, Chrome headless, GitHub Actions.
+Asked for: kiểm chứng các thay đổi tài liệu và CI theo yêu cầu môn học vừa đọc.
+Kept: trình xác thực skill thành công; CI commit 38bfcd5 thành công; kiểm tra tổng điểm/tên ZIP, AI-log và link file.
+Changed: ghi rõ phạm vi CI tài liệu và bố cục in tham chiếu sau khi kiểm tra đề xuất thành 2 trang A4; gói nộp vẫn chỉ Markdown.
+Rejected: ba bản sao tạm bị cố ý làm thiếu AI-LOG, sai tổng điểm và hỏng link đều bị trình kiểm tra từ chối; không trình bày chúng như lỗi sản phẩm thực tế hoặc một merge đã bị chặn.
+By hand: chưa có thao tác kiểm thử thủ công của nhóm được ghi nhận; AI thực hiện các kiểm tra trên và báo lại kết quả, không chứng nhận khả năng vấn đáp của nhóm.
