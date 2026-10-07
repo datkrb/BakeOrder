@@ -17,3 +17,11 @@ Kept: skill CSC13114 bám rubric và chính sách người dùng dán; yêu cầ
 Changed: áp dụng chính sách AI-first xuyên các bài, phân biệt sáu checkpoint với PA#1–PA#5; ghi rõ hai liên kết Claude chưa đọc được, không suy diễn nội dung đặc tả. AI sửa lại tự đánh giá từ 100 xuống 96 vì nguồn lịch và giả định chưa xác thực; không phải vì dùng nhiều AI.
 Rejected: cách xem việc dùng nhiều AI là vi phạm; tuyên bố đã đọc toàn bộ tài liệu khi công cụ không truy cập được nguồn.
 By hand: người dùng cung cấp đoạn chính sách AI và giải thích bối cảnh môn học; skill và thay đổi tài liệu được AI viết, chưa có kiểm chứng khả năng giải thích của từng thành viên.
+
+## 2026-10-07 — Thử đọc trực tiếp hai trang tài liệu Claude
+Tool: Codex, HTTP client và Chrome headless với hồ sơ trình duyệt riêng, không đăng nhập.
+Asked for: mở hai trang Claude để đọc nội dung môn học thay vì coi chúng là file đính kèm.
+Kept: kết quả kiểm tra truy cập: tải được HTML khung; yêu cầu dữ liệu trực tiếp gặp Cloudflare; sau khi chạy JavaScript, cả hai trang hiển thị “Page not found”.
+Changed: làm rõ rằng chưa lấy được nội dung bài học bên trong, không phải hai URL là file tải xuống.
+Rejected: suy đoán nội dung spec từ HTML khung hoặc kết luận tài liệu đã bị xóa chỉ vì trình duyệt không đăng nhập không đọc được.
+By hand: người dùng giải thích đây là hai website và yêu cầu đọc trực tiếp; việc kiểm tra được AI thực hiện. Chưa có nội dung nguồn mới để bổ sung vào skill.
