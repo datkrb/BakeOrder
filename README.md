@@ -21,16 +21,16 @@ PA#1 — Proposal and planning. Chưa triển khai sản phẩm; chỉ số đá
 Phạm vi dự kiến: dán hội thoại, trích xuất một đơn, hiển thị căn cứ, sửa/xác nhận và lưu đơn. Không kết nối mạng xã hội, tự trả lời khách, thanh toán hoặc quản lý kho.
 
 ## Lịch checkpoint
-| Mốc | Ngày (thứ Năm) | Chủ trì |
+| Mốc | Ngày dự kiến (thứ Tư) | Chủ trì |
 |---|---|---|
-| CP1 | 15/10/2026 | Trần Gia Cường |
-| CP2 | 22/10/2026 | Trần Gia Cường |
-| CP3 | 29/10/2026 | Nguyễn Ngọc Đại |
-| CP4 | 05/11/2026 | Nguyễn Hà Đạt |
-| CP5 | 12/11/2026 | Trần Gia Cường |
-| CP6 | 19/11/2026 | Nguyễn Hà Đạt |
+| CP1 (tuần 4) | 07/10/2026 | Trần Gia Cường |
+| CP2 (tuần 5) | 14/10/2026 | Trần Gia Cường |
+| CP3 (tuần 7) | 28/10/2026 | Nguyễn Ngọc Đại |
+| CP4 (tuần 9) | 11/11/2026 | Nguyễn Hà Đạt |
+| CP5 (tuần 11) | 25/11/2026 | Trần Gia Cường |
+| CP6 (tuần 12) | 02/12/2026 | Nguyễn Hà Đạt |
 
-Chi tiết đầu ra và phụ thuộc ở mục 4 của đề xuất. Lịch dựa trên thông tin nhóm; cập nhật nếu môn học điều chỉnh.
+Chi tiết đầu ra và phụ thuộc ở mục 4 của đề xuất. Lịch dự kiến từ tuần 4 đến tuần 12, lấy ngày nộp PA#1 07/10/2026 làm mốc; cập nhật khi có lịch chính thức.
 
 ## Nộp bài
 

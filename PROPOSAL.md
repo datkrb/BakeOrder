@@ -24,18 +24,18 @@ Ví dụ: khách nhắn “bánh 16 cm, lấy 18h ngày 20/11”, sau đó “đ
 **Không làm:** kết nối Zalo/Facebook, ảnh hoặc giọng nói, tự trò chuyện với khách, tự xác nhận đơn, thanh toán, vận chuyển, quản lý kho, nhiều chi nhánh, triển khai công khai nhiều tài khoản. Yêu cầu dị ứng chỉ được giữ nguyên để người bán kiểm tra, không được AI kết luận về độ an toàn thực phẩm.
 
 ## 4. Kế hoạch qua sáu checkpoint
-Lịch checkpoint: thứ Năm hằng tuần từ 15/10/2026 đến 19/11/2026. Trần Gia Cường phụ trách nhu cầu và đánh giá; Nguyễn Ngọc Đại phụ trách LLM/backend; Nguyễn Hà Đạt phụ trách giao diện và tích hợp. Mỗi mốc có một người chịu trách nhiệm cuối cùng, các thành viên còn lại hỗ trợ và rà soát.
+Lịch dự kiến: sáu checkpoint cách nhau 1–2 tuần, từ tuần 4 (nộp PA#1 ngày 07/10/2026) đến tuần 12 (02/12/2026). Trần Gia Cường phụ trách nhu cầu và đánh giá; Nguyễn Ngọc Đại phụ trách LLM/backend; Nguyễn Hà Đạt phụ trách giao diện và tích hợp. Mỗi mốc có một người chịu trách nhiệm cuối cùng, các thành viên còn lại hỗ trợ và rà soát.
 
-| Mốc | Công việc và kết quả dự kiến | Chủ trì | Hạn hoàn thành |
+| Mốc | Công việc và kết quả dự kiến | Chủ trì | Ngày dự kiến |
 |---|---|---|---|
-| CP1 | Chốt vấn đề, phạm vi, đề xuất PA#1, repo và tự đánh giá. | Trần Gia Cường | 15/10/2026 |
-| CP2 | Phỏng vấn một chủ tiệm; xác thực quy trình và chi phí sai đơn; chuẩn bị 20 hội thoại đầu có đáp án. | Trần Gia Cường | 22/10/2026 |
-| CP3 | Thử trích xuất có căn cứ, đánh dấu thiếu/mâu thuẫn; báo cáo lỗi và chi phí trên 40 mẫu phát triển. | Nguyễn Ngọc Đại | 29/10/2026 |
-| CP4 | Tích hợp luồng dán → nháp → sửa → xác nhận → lưu; demo và kiểm tra dữ liệu lưu. | Nguyễn Hà Đạt | 05/11/2026 |
-| CP5 | Hoàn thiện 60 mẫu; đánh giá 20 mẫu giữ riêng; thử với chủ tiệm, đo thời gian và số lần sửa so với chép tay. | Trần Gia Cường | 12/11/2026 |
-| CP6 | Chốt bản demo, hướng dẫn chạy, kết quả đánh giá, giới hạn và thay đổi so với kế hoạch. | Nguyễn Hà Đạt | 19/11/2026 |
+| CP1 (tuần 4) | Chốt vấn đề, phạm vi, đề xuất PA#1, repo và tự đánh giá. | Trần Gia Cường | 07/10/2026 |
+| CP2 (tuần 5) | Phỏng vấn một chủ tiệm; xác thực quy trình và chi phí sai đơn; chuẩn bị 20 hội thoại đầu có đáp án. | Trần Gia Cường | 14/10/2026 |
+| CP3 (tuần 7) | Thử trích xuất có căn cứ, đánh dấu thiếu/mâu thuẫn; báo cáo lỗi và chi phí trên 40 mẫu phát triển. | Nguyễn Ngọc Đại | 28/10/2026 |
+| CP4 (tuần 9) | Tích hợp luồng dán → nháp → sửa → xác nhận → lưu; demo và kiểm tra dữ liệu lưu. | Nguyễn Hà Đạt | 11/11/2026 |
+| CP5 (tuần 11) | Hoàn thiện 60 mẫu; đánh giá 20 mẫu giữ riêng; thử với chủ tiệm, đo thời gian và số lần sửa so với chép tay. | Trần Gia Cường | 25/11/2026 |
+| CP6 (tuần 12) | Chốt bản demo, hướng dẫn chạy, kết quả đánh giá, giới hạn và thay đổi so với kế hoạch. | Nguyễn Hà Đạt | 02/12/2026 |
 
-Phụ thuộc chính: dữ liệu mẫu trước thử LLM; luồng xác nhận trước thử người dùng. Dự kiến hoàn thành công việc chính trước mỗi hạn chính thức ba ngày để sửa lỗi. Nếu độ chính xác chưa đạt ở CP3, giảm xuống đơn một loại bánh và ưu tiên kích thước, số lượng, lịch nhận; vẫn giữ xác nhận thủ công. Nếu yêu cầu chi tiết từng checkpoint thay đổi, nhóm cập nhật công việc trên repository và ghi lại lý do.
+Phụ thuộc chính: dữ liệu mẫu trước thử LLM; luồng xác nhận trước thử người dùng. Dự kiến hoàn thành công việc chính trước mỗi mốc CP2–CP6 ba ngày để sửa lỗi. Nếu độ chính xác chưa đạt ở CP3, giảm xuống đơn một loại bánh và ưu tiên kích thước, số lượng, lịch nhận; vẫn giữ xác nhận thủ công. Nếu yêu cầu chi tiết từng checkpoint thay đổi, nhóm cập nhật công việc trên repository và ghi lại lý do.
 
 ## 5. Hai rủi ro có thể khiến dự án thất bại
 **R1 — Trích xuất sai nhưng người dùng tin phiếu nháp:** đặc biệt khi khách đổi ý hoặc dùng ngày tương đối; nếu lỗi thường xuyên, sản phẩm không tiết kiệm công kiểm tra. **Bắt đầu tuần này:** Nguyễn Ngọc Đại tạo 20 ca khó có đáp án, thử mô hình và phân loại lỗi; Nguyễn Hà Đạt phác thảo hiển thị căn cứ cạnh từng trường và bước xác nhận bắt buộc. Sau đó mở rộng bộ đánh giá, không dùng điểm “tự tin” của mô hình thay cho đối chiếu căn cứ.
