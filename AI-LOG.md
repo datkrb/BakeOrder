@@ -33,3 +33,11 @@ Kept: PROPOSAL.md, SELF_ASSESSMENT_REPORT.md, AI-LOG.md và README.md.
 Changed: gỡ rules file, workflow CI, script kiểm tra và file cấu hình khỏi nhánh hiện tại; chuyển CI trong kế hoạch sang CP2, bỏ các tham chiếu tới công cụ đã gỡ.
 Rejected: giữ rules/CI chỉ vì slide môn học nói tới chúng dù người dùng đã giới hạn phạm vi repository ở PA#1.
 By hand: người dùng xác định lại phạm vi; AI thực hiện thay đổi. Các mục trước ghi lịch sử công việc lúc đó, không mô tả danh sách file hiện còn trong repo.
+
+## 2026-10-07 — Cập nhật điểm nhóm đề nghị
+Tool: Codex.
+Asked for: đổi tổng điểm tự đánh giá thành 100/100.
+Kept: bằng chứng, giới hạn và phần những gì chưa làm được.
+Changed: điểm đề nghị thành 20/25/15/20/10/10; đồng bộ tổng, README và tên ZIP.
+Rejected: không bỏ giới hạn chưa xác thực hoặc ghi thêm kết quả đã làm chỉ để khớp điểm đề nghị.
+By hand: người dùng quyết định đề nghị 100/100; AI chỉnh tài liệu và đóng gói, không có kiểm chứng mới làm thay đổi chất lượng bằng chứng.
