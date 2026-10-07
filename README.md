@@ -11,7 +11,9 @@
 
 ## Tài liệu PA#1
 - [Đề xuất và kế hoạch](PROPOSAL.md)
-- [Báo cáo tự đánh giá — đề nghị 100/100](SELF_ASSESSMENT_REPORT.md)
+- [Báo cáo tự đánh giá — đề nghị 96/100](SELF_ASSESSMENT_REPORT.md)
+- [Nhật ký sử dụng AI](AI-LOG.md)
+- [Skill dùng xuyên môn CSC13114 AI-first](https://github.com/datkrb/BakeOrder/blob/main/course-skill/csc13114-ai-first/SKILL.md)
 
 Repository: https://github.com/datkrb/BakeOrder
 
@@ -30,8 +32,10 @@ Phạm vi dự kiến: dán hội thoại, trích xuất một đơn, hiển th�
 | CP5 (tuần 11) | 25/11/2026 | Trần Gia Cường |
 | CP6 (tuần 12) | 02/12/2026 | Nguyễn Hà Đạt |
 
-Chi tiết đầu ra và phụ thuộc ở mục 4 của đề xuất. Lịch dự kiến từ tuần 4 đến tuần 12, lấy ngày nộp PA#1 07/10/2026 làm mốc; cập nhật khi có lịch chính thức.
+Chi tiết việc của cả ba thành viên, đầu ra và phụ thuộc ở mục 4 của đề xuất. Chủ trì không phải người duy nhất làm việc. Lịch dự kiến từ tuần 4 đến tuần 12, lấy ngày nộp PA#1 07/10/2026 làm mốc; cập nhật khi có lịch chính thức. Sáu checkpoint này chưa được gán tương ứng với PA#1–PA#5.
 
 ## Nộp bài
 
-Gói `23120225-23120226-23120229_100.zip` gồm ba tài liệu Markdown: `PROPOSAL.md`, `SELF_ASSESSMENT_REPORT.md` và `README.md`. Đề không chỉ định PDF; giới hạn hai trang nội dung đề xuất vẫn áp dụng. Ngày của sáu checkpoint được giữ vì đề yêu cầu người phụ trách và ngày cụ thể cho từng mốc. Điểm tự đánh giá không thay thế điểm chấm chính thức.
+Gói `23120225-23120226-23120229_96.zip` gồm bốn tài liệu Markdown: `PROPOSAL.md`, `SELF_ASSESSMENT_REPORT.md`, `AI-LOG.md` và `README.md`. Đề không chỉ định PDF; giới hạn hai trang nội dung đề xuất vẫn áp dụng và phụ thuộc cách trình bày khi chấm. Ngày của sáu checkpoint được giữ vì đề yêu cầu người phụ trách và ngày cụ thể cho từng mốc. Điểm tự đánh giá không thay thế điểm chấm chính thức.
+
+Skill là tài nguyên làm việc trong repository, không phải sản phẩm phải nộp của PA#1. Hai artifact Claude chưa truy cập được; cần bổ sung bản xuất của tài liệu để xác minh đặc tả và yêu cầu các mốc sau. Không coi skill hiện tại là bản sao đầy đủ của giáo trình.

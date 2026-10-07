@@ -14,7 +14,7 @@ BakeOrder là ứng dụng web hỗ trợ cửa hàng bánh nhỏ chuyển hội
 
 Ví dụ: khách nhắn “bánh 16 cm, lấy 18h ngày 20/11”, sau đó “đổi 20 cm nhé”. Phiếu phải ghi 20 cm và giữ lịch nhận cũ; nếu khách chỉ nhắn “đổi sang thứ Bảy” mà thiếu ngữ cảnh ngày, hệ thống yêu cầu xác nhận ngày cụ thể. Chủ cửa hàng xem hội thoại cạnh phiếu, sửa và xác nhận rồi mới lưu thành đơn chính thức.
 
-**Ai chịu thiệt và bao nhiêu:** lấy tình huống giả định một đơn bán 350.000 đồng, chi phí làm bánh 180.000 đồng. Nếu phát hiện sai kích thước sau khi làm, cửa hàng có thể mất thêm 180.000 đồng để làm lại; nếu hủy đơn, có thể phải hoàn 350.000 đồng đã thu và chịu chi phí bánh đã làm. Đây là hai kịch bản, không cộng gộp thành một khoản thiệt hại. Khách mất thời gian, và giao sau giờ tiệc có thể không khắc phục được bằng việc đổi bánh. Các con số sẽ được xác thực khi phỏng vấn. Trước sản xuất, lỗi thường có thể sửa trên phiếu; sau giao hàng, việc sửa dữ liệu không hoàn tác được thiệt hại.
+**Ai chịu thiệt và bao nhiêu:** giả định đơn bán 350.000 đồng, chi phí làm bánh 180.000 đồng. Sai kích thước sau sản xuất có thể tốn thêm 180.000 đồng làm lại. Nếu hủy và hoàn 350.000 đồng, cửa hàng mất doanh thu dự kiến và chịu 180.000 đồng chi phí bánh bỏ đi; tiền hoàn không phải khoản lỗ cộng thêm vào doanh thu đã mất. Khách mất thời gian hoặc lỡ tiệc; sửa sau giờ tiệc không bù lại được sự kiện. Trước sản xuất, thường sửa được phiếu; sau giao hàng, sửa dữ liệu không hoàn tác thiệt hại. Đây là giả định cần xác thực ở CP2.
 
 **Làm sao biết sai:** dự kiến đánh giá bằng 60 hội thoại có đáp án do Cường gán nhãn và Đạt kiểm tra, bất đồng được đối chiếu lại với hội thoại, gồm đổi yêu cầu, thiếu thông tin, mâu thuẫn và cách viết tắt. Dùng 40 hội thoại phát triển, giữ riêng 20 hội thoại đánh giá cuối. Trường quan trọng gồm loại bánh, kích thước, số lượng và lịch nhận; sai một trường là một đơn có nguy cơ gây thiệt hại. Theo dõi độ đúng từng trường, số đơn sai và số trường người dùng sửa; so sánh thời gian chép tay với kiểm tra phiếu trên cùng tình huống. Mục tiêu ban đầu: đúng ít nhất 95% trường quan trọng đã có thông tin và không tự điền các trường cố ý thiếu trong bộ đánh giá; đây là mục tiêu, chưa phải kết quả đạt được.
 
@@ -24,16 +24,16 @@ Ví dụ: khách nhắn “bánh 16 cm, lấy 18h ngày 20/11”, sau đó “đ
 **Không làm:** kết nối Zalo/Facebook, ảnh hoặc giọng nói, tự trò chuyện với khách, tự xác nhận đơn, thanh toán, vận chuyển, quản lý kho, nhiều chi nhánh, triển khai công khai nhiều tài khoản. Yêu cầu dị ứng chỉ được giữ nguyên để người bán kiểm tra, không được AI kết luận về độ an toàn thực phẩm.
 
 ## 4. Kế hoạch qua sáu checkpoint
-Lịch dự kiến: sáu checkpoint cách nhau 1–2 tuần, từ tuần 4 (nộp PA#1 ngày 07/10/2026) đến tuần 12 (02/12/2026). Trần Gia Cường phụ trách nhu cầu và đánh giá; Nguyễn Ngọc Đại phụ trách LLM/backend; Nguyễn Hà Đạt phụ trách giao diện và tích hợp. Mỗi mốc có một người chịu trách nhiệm cuối cùng, các thành viên còn lại hỗ trợ và rà soát.
+Lịch dự kiến từ tuần 4 đến tuần 12, cách nhau 1–2 tuần. Cường = Trần Gia Cường; Đại = Nguyễn Ngọc Đại; Đạt = Nguyễn Hà Đạt. Cả ba làm việc ở mỗi mốc; chủ trì tổng hợp đầu ra và theo dõi tiến độ, không làm thay tất cả. CP1–CP6 là checkpoint kế hoạch, chưa gán tương ứng với PA#1–PA#5 khi chưa có lịch chi tiết môn học.
 
-| Mốc | Công việc và kết quả dự kiến | Chủ trì | Ngày dự kiến |
-|---|---|---|---|
-| CP1 (tuần 4) | Chốt vấn đề, phạm vi, đề xuất PA#1, repo và tự đánh giá. | Trần Gia Cường | 07/10/2026 |
-| CP2 (tuần 5) | Phỏng vấn một chủ tiệm; xác thực quy trình và chi phí sai đơn; chuẩn bị 20 hội thoại đầu có đáp án. | Trần Gia Cường | 14/10/2026 |
-| CP3 (tuần 7) | Thử trích xuất có căn cứ, đánh dấu thiếu/mâu thuẫn; báo cáo lỗi và chi phí trên 40 mẫu phát triển. | Nguyễn Ngọc Đại | 28/10/2026 |
-| CP4 (tuần 9) | Tích hợp luồng dán → nháp → sửa → xác nhận → lưu; demo và kiểm tra dữ liệu lưu. | Nguyễn Hà Đạt | 11/11/2026 |
-| CP5 (tuần 11) | Hoàn thiện 60 mẫu; đánh giá 20 mẫu giữ riêng; thử với chủ tiệm, đo thời gian và số lần sửa so với chép tay. | Trần Gia Cường | 25/11/2026 |
-| CP6 (tuần 12) | Chốt bản demo, hướng dẫn chạy, kết quả đánh giá, giới hạn và thay đổi so với kế hoạch. | Nguyễn Hà Đạt | 02/12/2026 |
+| Mốc / ngày dự kiến | Cường | Đại | Đạt | Đầu ra / chủ trì |
+|---|---|---|---|---|
+| CP1 · T4 · 07/10/2026 | Rà vấn đề, phạm vi | Rà tính năng, chi phí AI | Kiểm tra repo, gói nộp | PA#1 + tự đánh giá + AI-LOG / Cường |
+| CP2 · T5 · 14/10/2026 | Phỏng vấn, gán nhãn 20 mẫu | Thử 20 ca khó mô phỏng | Kiểm tra nhãn, phác thảo luồng | Quy trình, 20 mẫu, bản phác thảo / Cường |
+| CP3 · T7 · 28/10/2026 | Mở rộng 40 mẫu phát triển | Xây trích xuất, đo lỗi/token | Làm giao diện nháp và căn cứ | Bản thử LLM, báo cáo lỗi/chi phí / Đại |
+| CP4 · T9 · 11/11/2026 | Kiểm tra đơn theo hội thoại | Lưu đơn, kiểm tra dữ liệu API | Tích hợp sửa/xác nhận/danh sách | Demo trọn luồng / Đạt |
+| CP5 · T11 · 25/11/2026 | Thử với chủ tiệm, đo thời gian | Chạy đánh giá 20 mẫu giữ riêng | Kiểm tra nhãn, sửa lỗi giao diện | 60 mẫu, báo cáo chất lượng / Cường |
+| CP6 · T12 · 02/12/2026 | Tổng hợp giới hạn/thay đổi | Sửa lỗi, hướng dẫn cấu hình | Kiểm tra chạy sạch, chuẩn bị demo | Bản bàn giao, hướng dẫn, kết quả / Đạt |
 
 Phụ thuộc chính: dữ liệu mẫu trước thử LLM; luồng xác nhận trước thử người dùng. Dự kiến hoàn thành công việc chính trước mỗi mốc CP2–CP6 ba ngày để sửa lỗi. Nếu độ chính xác chưa đạt ở CP3, giảm xuống đơn một loại bánh và ưu tiên kích thước, số lượng, lịch nhận; vẫn giữ xác nhận thủ công. Nếu yêu cầu chi tiết từng checkpoint thay đổi, nhóm cập nhật công việc trên repository và ghi lại lý do.
 
@@ -49,6 +49,8 @@ Phụ thuộc chính: dữ liệu mẫu trước thử LLM; luồng xác nhận 
 - **Zod:** kiểm tra cấu trúc và kiểu dữ liệu mô hình trả về trước khi hiển thị/lưu; không coi cấu trúc hợp lệ là bằng chứng nội dung đúng.
 - **Git + GitHub:** quản lý mã, tài liệu và phân công qua issue, giúp truy vết thay đổi kế hoạch; demo chạy cục bộ để chưa cần chi phí hosting.
 
-**Dự toán:** một lượt giả định 2.000 token vào và 500 token ra tốn 0,0004 USD; 5.000 lượt khoảng 2 USD. Dành tối đa 5 USD cho thử nghiệm, kể cả lượt thử lại; theo dõi token thực tế và dừng gọi khi chạm ngân sách ứng dụng. Ước tính chưa gồm thuế, tỷ giá, hosting và không dùng công cụ tìm kiếm trả phí. Dùng dữ liệu mô phỏng/đã ẩn danh khi thử nghiệm.
+**Dự toán:** một lượt giả định 2.000 token vào và 500 token ra tốn 0,0004 USD; 5.000 lượt khoảng 2 USD. Dành tối đa 5 USD cho thử nghiệm, kể cả lượt thử lại; theo dõi token thực tế và dừng gọi khi chạm ngân sách ứng dụng. Ước tính chưa gồm thuế, tỷ giá, hosting và không dùng công cụ tìm kiếm trả phí. Chỉ dùng hội thoại mô phỏng khi gọi mô hình trong bản demo.
+
+**Dữ liệu ra ngoài:** bản demo chỉ gửi hội thoại mô phỏng, chỉ dẫn trích xuất và cấu trúc phiếu từ server tới Google Gemini để tạo nháp. Không gửi tên, số điện thoại, địa chỉ thật, dữ liệu khách thật hay bí mật vào prompt; API key chỉ dùng xác thực từ server. Phỏng vấn chỉ cung cấp quy trình để viết tình huống tổng hợp. Cách này đủ thử tính năng mà không chuyển dữ liệu nhận diện khách sang nhà cung cấp; chưa cam kết chính sách lưu giữ của Google. Nhóm khai báo AI hỗ trợ phát triển trong `AI-LOG.md` ở mỗi PA#1–PA#5 và chịu trách nhiệm giải thích sản phẩm.
 
 [1] Google, Gemini Developer API pricing, mục Gemini 2.5 Flash-Lite / Standard, kiểm tra 07/10/2026: https://ai.google.dev/gemini-api/docs/pricing — cần kiểm tra lại trước triển khai.
